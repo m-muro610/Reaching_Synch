@@ -1,20 +1,18 @@
 import sys
-sys.path.insert(1, '/Users/Miki/Documents/VEL/inflection_point/Stanford_classroom/analysis/multiSyncPy')
+sys.path.insert(1, 'Path of multiSyncPy folder')
 
 import pandas as pd
 import scipy as sp
 from scipy import signal
 import numpy as np
 import synchrony_metrics as sm
-from matplotlib import pyplot as plt
-from matplotlib import pyplot as plt
 import math
 import pingouin as pg
 import sklearn as sl
 from sklearn.feature_selection import mutual_info_regression
 
-trialNum = pd.read_csv("/Users/Miki/Documents/Rits/reaching/comp_trials.csv")
-path ="/Users/Miki/Documents/Rits/reaching/reaching_data/distance_0.05/csv/comp/"
+trialNum = pd.read_csv("Path of the trial numbe file (comp_trials.csv or coop_trials.csv)")
+path ="Path of the data folder"
 
 def crosscorr(datax, datay, lag=0, wrap=False):
     """ Lag-N cross correlation. 
