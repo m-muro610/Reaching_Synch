@@ -1,11 +1,11 @@
-import sys
-sys.path.insert(1, 'Path of multiSyncPy folder')
+# import sys
+# sys.path.insert(1, 'Path of multiSyncPy folder')
 
 import pandas as pd
 import scipy as sp
 from scipy import signal
 import numpy as np
-import synchrony_metrics as sm
+# import synchrony_metrics as sm
 import math
 import pingouin as pg
 import sklearn as sl
